@@ -10,10 +10,7 @@ const ContactList = () => {
     const {isContactList} = useSelector((store) => store.contact);
 
     const dispatch = useDispatch();
-    // console.log(isContactList);
-    // console.log("From store" ,contacts);
-
-    // return isEditContactForm && <EditForm/>
+ 
 
 
   return isContactList &&  (

@@ -14,33 +14,17 @@ const Home = () => {
 
     useEffect(() => {
         fetchData();
-        // postData();
-       
-    },[]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+       },[]);
 
     const fetchData = async () => {
         const data = await fetch("https://jsonplaceholder.typicode.com/users");
         const json = await data.json();
-        console.log("Get method",json);
+       
         dispatch(populateContactList(json));
     }
 
-    // const postData= async () => {
-    //   const data = await fetch("https://jsonplaceholder.typicode.com/users",
-    //   {
-    //     method : 'POST',
-    //     body : JSON.stringify({
-    //       name : "ABC",
-    //       email : "ABC@gmail.com",
-    //       phone : 3456789
-    //     })
-    //   })
 
-      
-
-    //   const json = await data.json();
-    //   console.log("from post", json); 
-    // }
 
   return (
     <div>
