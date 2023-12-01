@@ -16,7 +16,7 @@ const ContactList = () => {
   return isContactList &&  (
     <div className='w-[100%]'>
       
-      <div className='flex justify-between mx-2 p-4 absolute left-[25%] top-[2%] w-[50%]'>
+      <div className='flex justify-between mx-2 p-4 absolute left-[20%] top-[2%] w-[60%]'>
         <p className=' text-slate-700 font-bold text-2xl'>Contact List</p>
         <button 
           className='text-white bg-slate-600 rounded-lg p-2 mb-4'
@@ -27,7 +27,7 @@ const ContactList = () => {
 
       
       
-      <div className='absolute left-[25%] top-[10%] w-[50%]'>
+      <div className='absolute left-[20%] top-[10%] w-[60%]'>
         {contacts.map((contact, index) => <Contact key={index} contact ={contact} index={index}/>)}
       </div>
     </div>
